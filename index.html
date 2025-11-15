@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Arlian Oscar - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Muhammad Arlian Oscar</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger" id="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Muhammad Arlian Oscar</h1>
+            <div class="subtitle">Junior Programmer && NewBie Web Developer</div>
+            <p>Crafting beautiful digital experiences with modern technologies. Passionate about creating innovative solutions that make a difference.</p>
+            <div class="cta-buttons">
+                <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about fade-in" id="about">
+        <div class="about-container">
+        <img class="about-image" src="profile.png" alt="Muhammad Arlian Oscar" height="150%" weight="100%"> 
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>"Saya Muhammad Arlian Oscar, seorang mahasiswa dari Universitas Teknokrat Indonesia 
+                    yang sedang menyelami dunia web development. Sebagai seorang junior programmer, saya selalu 
+                    tertantang untuk belajar teknologi baru dan mengembangkan kemampuan saya. Selamat datang di portofolio saya!"</p>
+               <div class="skills-tags">
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">UI/UX Design</span>
+                    <span class="skill-tag">MongoDB</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio fade-in" id="portfolio">
+        <h2>Featured Projects</h2>
+        <div class="portfolio-grid">
+            <div class="project-card">
+                <img class="project-image" src="SMAN1BDL.jpeg" alt="SMAN 1 BANDAR LAMPUNG">
+                <div class="project-info">
+                    <h3>SMAN 1 BANDAR LAMPUNG</h3>
+                    <p>"Saya melaksanakan kegiatan pengabdian kepada masyarakat di SMAN 1 Bandar Lampung. 
+                        Kegiatan ini mengangkat topik yang relevan dengan mata kuliah Pendidikan dan Kewarganegaraan, 
+                        dengan fokus pada pembahasan isu-isu nasional terkini seperti kasus KKB di Papua."</p>
+                   <div class="tech-stack">
+                        <span class="tech">React</span>
+                        <span class="tech">Node.js</span>
+                        <span class="tech">MongoDB</span>
+                        <span class="tech">Stripe</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img class="project-image" src="SMK4BDL.jpeg" alt="SMKN 4 BANDAR LAMPUNG">
+                <div class="project-info">
+                    <h3>SMKN 4 BANDAR LAMPUNG</h3>
+                    <p>"Melaksanakan pengabdian masyarakat di SMKN 4 Bandar Lampung berupa studi kasus implementasi 
+                        mata kuliah Jaringan Komputer. Kegiatan ini mencakup analisis topologi 
+                        jaringan existing, identifikasi perangkat yang digunakan, 
+                        dan pemodelan (simulasi) jaringan tersebut menggunakan Cisco Packet Tracer."</p>
+                    <div class="tech-stack">
+                        <span class="tech">Vue.js</span>
+                        <span class="tech">Firebase</span>
+                        <span class="tech">Chart.js</span>
+                        <span class="tech">API</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img class="project-image" src="SMKPALAPA.jpeg" alt="SMK PALAPA">
+                <div class="project-info">
+                    <h3>SMK PALAPA</h3>
+                    <p>"Mengaplikasikan materi dari mata kuliah Pengembangan Kepribadian, kami melaksanakan 
+                        pengabdian masyarakat di SMK Palapa Bandar Lampung. Kegiatan ini berupa penyuluhan dan simulasi 
+                        mengenai 'Impression Management' dan etiket dasar. Kami melatih siswa tentang aspek-aspek penting 
+                        dalam berperilaku, termasuk body language (bahasa tubuh) 
+                        seperti cara duduk, berjalan, dan standar profesional untuk berjabat tangan."</p>
+                   <div class="tech-stack">
+                        <span class="tech">WebSocket</span>
+                        <span class="tech">Express</span>
+                        <span class="tech">Redis</span>
+                        <span class="tech">Three.js</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img class="project-image" src="MA.jpeg" alt="MADRASAH ALIYAH">
+                <div class="project-info">
+                    <h3>MADRASAH ALIYAH</h3>
+                    <p>"Program pengabdian masyarakat kami di Madrasah Aliyah kali ini bertujuan untuk meningkatkan 
+                        literasi digital dan produktivitas siswa. Kami memberikan pelatihan praktis mengenai pintasan 
+                        keyboard (keyboard shortcuts) yang esensial di Microsoft Word, Excel, dan PowerPoint, 
+                        agar siswa dapat mengoperasikan perangkat lunak tersebut secara lebih cepat dan efektif."</p>
+                    <div class="tech-stack">
+                        <span class="tech">React</span>
+                        <span class="tech">D3.js</span>
+                        <span class="tech">PostgreSQL</span>
+                        <span class="tech">Python</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img class="project-image" src="WEB.jpeg" alt="WEBSITE">
+                <div class="project-info">
+                    <h3>PKM PEMBUATAN WEBSITE</h3>
+                    <p>"Program pengabdian masyarakat kami di Madrasah Aliyah kali ini bertujuan untuk meningkatkan 
+                        literasi digital dan produktivitas siswa. Kami memberikan pelatihan praktis mengenai pintasan 
+                        keyboard (keyboard shortcuts) yang esensial di Microsoft Word, Excel, dan PowerPoint, 
+                        agar siswa dapat mengoperasikan perangkat lunak tersebut secara lebih cepat dan efektif."</p>
+                    <div class="tech-stack">
+                        <span class="tech">React</span>
+                        <span class="tech">Storybook</span>
+                        <span class="tech">Tailwind</span>
+                        <span class="tech">TypeScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img class="project-image" src="CATURR.jpeg" alt="CATUR">
+                <div class="project-info">
+                    <h3>CATUR GEBYAR FSIP</h3>
+                    <p>"Meraih Juara 1 dalam Lomba Catur pada acara Gebyar FSIP 
+                        (Fakultas Sastra dan Ilmu Pendidikan) di Universitas Teknokrat Indonesia."</p>
+                    <div class="tech-stack">
+                        <span class="tech">Next.js</span>
+                        <span class="tech">GraphQL</span>
+                        <span class="tech">Prisma</span>
+                        <span class="tech">Stripe</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact fade-in" id="contact">
+        <h2>Let's Work Together</h2>
+        <p>Have a project in mind? Let's create something amazing together!</p>
+        <form class="contact-form" id="contactForm">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" required placeholder="Your Name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" required placeholder="your.email@example.com">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" required placeholder="Tell me about your project..."></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="https://www.instagram.com/mhdarlianoscarrr?igsh=MWEzMGpnZWdydWd3dw==" class="social-link">📧</a>
+            <a href="https://wa.me/082182422274" class="social-link">📞</a>
+            <a href="#" class="social-link">🐙</a>
+            <a href="#" class="social-link">🐦</a>
+        </div>
+        <p>&copy; 2025 Muhammad Arlian Oscar. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Typing effect
+        function typeWriter(element, text, speed = 100) {
+            let i = 0;
+            element.innerHTML = '';
+            function type() {
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(type, speed);
+                }
+            }
+            type();
+        }
+
+        // Initialize typing effect on page load
+        window.addEventListener('load', () => {
+            const h1 = document.querySelector('.hero h1');
+            const subtitle = document.querySelector('.subtitle');
+            const p = document.querySelector('.hero p');
+            const h1Text = h1.textContent;
+            const subtitleText = subtitle.textContent;
+            const pText = p.textContent;
+
+            h1.classList.add('typing');
+            setTimeout(() => {
+                typeWriter(h1, h1Text, 150);
+                h1.classList.remove('typing');
+            }, 500);
+
+            setTimeout(() => {
+                subtitle.classList.add('typing');
+                typeWriter(subtitle, subtitleText, 100);
+                subtitle.classList.remove('typing');
+            }, 2000);
+
+            setTimeout(() => {
+                p.classList.add('typing');
+                typeWriter(p, pText, 80);
+                p.classList.remove('typing');
+            }, 3500);
+        });
+
+        // Mobile Navigation
+        const burger = document.getElementById('burger');
+        const navLinks = document.getElementById('navLinks');
+
+        burger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Scroll Animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // EmailJS Initialization
+        (function(){
+            emailjs.init("WM2VN2S3nEvofgcmx"); // Replace with your EmailJS public key
+        })();
+
+        // Form Submission
+        document.getElementById('contactForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // Send email using EmailJS
+            emailjs.send("service_fjkaayo", "template_2glw1r6", {
+                from_name: name,
+                from_email: email,
+                message: message,
+                to_email: "muhammadarlian52@gmail.com"
+            }).then(function(response) {
+                alert(`Thank you ${name}! Your message has been sent. I'll get back to you soon! 🚀`);
+                e.target.reset();
+            }, function(error) {
+                alert('Failed to send message. Please try again later.');
+                console.error('EmailJS error:', error);
+            });
+        });
+
+        // Project Cards Animation
+        const cards = document.querySelectorAll('.project-card');
+        cards.forEach((card, index) => {
+            card.style.animationDelay = `${index * 0.1}s`;
+        });
+
+
+    </script>
+</body>
+</html>
