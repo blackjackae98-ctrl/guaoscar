@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MADRASAH ALIYAH - Muhammad Arlian Oscar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Muhammad Arlian Oscar</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#portfolio">Project</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="burger" id="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Detail Section -->
+    <section class="project-detail fade-in">
+        <div class="project-detail-container">
+            <a href="index.html#portfolio" class="back-btn">←</a>
+            <img class="project-detail-image" src="MA.jpeg" alt="MADRASAH ALIYAH">
+            <div class="project-detail-text">
+                <h2>MADRASAH ALIYAH</h2>
+                <p>"Program pengabdian masyarakat kami di Madrasah Aliyah kali ini bertujuan untuk meningkatkan
+                    literasi digital dan produktivitas siswa. Kami memberikan pelatihan praktis mengenai pintasan
+                    keyboard (keyboard shortcuts) yang esensial di Microsoft Word, Excel, dan PowerPoint,
+                    agar siswa dapat mengoperasikan perangkat lunak tersebut secara lebih cepat dan efektif."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="https://www.instagram.com/mhdarlianoscarrr?igsh=MWEzMGpnZWdydWd3dw==" class="social-link">📧</a>
+            <a href="https://wa.me/082182422274" class="social-link">📞</a>
+            <a href="#" class="social-link">🐙</a>
+            <a href="#" class="social-link">🐦</a>
+        </div>
+        <p>&copy; 2025 Muhammad Arlian Oscar. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Mobile Navigation
+        const burger = document.getElementById('burger');
+        const navLinks = document.getElementById('navLinks');
+
+        burger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Scroll Animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
